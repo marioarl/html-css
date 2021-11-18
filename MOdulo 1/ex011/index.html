@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Midias em HTML5</title>
+</head>
+<body>
+	<h1>Imagens dinamicas</h1>
+	<p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador </p>
+
+	<picture>
+		<source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+		<source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+		<img src="imagens/foto-g.png" alt="Imagem flexivel">
+	</picture>
+
+	<h1>Reproduzindo audios</h1>
+	<p>Vamos aprender a reproduzir audios em HTML5.</p>
+	<!--<audio src="midia/guanacast-33.mp3" autoplay controls></audio> Compativel com os formatos MP3 WAV OGG Este é a 1 forma de colocar audio-->
+	<audio preload="metadata" controls loop>
+		<source src="midia/guanacast-33.mp3" type="audio/mpeg"><!--type:  verificar o material da aula 10, e sempre colocar na ordem que voce quer que toque primeiro os formatos de audio-->
+	</audio>
+</body>
+</html>

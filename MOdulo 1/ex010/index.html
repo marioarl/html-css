@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trabalhando com links</title>
+</head>
+<body>
+	<h1>Usando links externos</h1>
+	<p>Voce pode acessar meu <a href="https://github.com/gustavoguanabara" target="_blank" rel="external">repositorio publico no GitHub</a> </p> <!--Para abrir o link em outra aba, deve-se usar o parametro target="_blank"-->
+	<p>Voce tambem pode acessar o meu <a href="https://youtube.com/cursoemvideo">canal no YouTube</a></p><!--Perceba que esse link nao tem o parametro target e abrirá na mesma aba-->
+
+	<h1>Usando links internos</h1>
+	<p>Esta é a primeira pagina do site. Se voce quiser pode acessar tambem a minha <a href="pag02.html" rel="next" target="_self">segunda pagina</a></p>
+	<p>Voce tambem ode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">pagina de noticias</a></p> <!--Quando o link é para sua ropria pagina, nao há necessiade de abrir outra aba, para isso use o parametro target="_self" da tag <a></a>-->
+
+	<h1>Links para download</h1>
+	<ul>
+		<li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+		<li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+	</ul>
+</body>
+</html>
