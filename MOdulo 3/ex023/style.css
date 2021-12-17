@@ -23,6 +23,11 @@ thead, tfoot {
 	color: white;
 }
 
+tbody > tr:nth-child(2n){/*2n significa de 2 em 2 linhas - tambem podemos selecionar com odd(impar) even(par)*/
+	background-color: lightgray;
+}
+
+
 .num {
 	text-align: right;
 }
