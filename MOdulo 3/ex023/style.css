@@ -5,6 +5,7 @@ body {
 table {
 	width: 500px;
 	border-collapse: collapse;
+	position: relative; /*Deixar o cabecalho fixo*/
 }
 
 td, th {
@@ -21,6 +22,12 @@ caption {
 thead, tfoot {
 	background-color: gray;
 	color: white;
+}
+
+thead > tr > th { /*Deixar o cabecalho fixo*/
+	position: sticky;
+	top:-1px;
+	background-color: gray;
 }
 
 tbody > tr:nth-child(2n){/*2n significa de 2 em 2 linhas - tambem podemos selecionar com odd(impar) even(par)*/
